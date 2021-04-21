@@ -1,4 +1,14 @@
 body {
-  background-image: url("/img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-color: #cccccc;
+}
+
+[v-cloak]{
+  display:none;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
