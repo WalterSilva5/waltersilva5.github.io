@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/animate.min.css" />
   <link rel="stylesheet" href="css/hover-min.css" />
+  <script src="js/jquery.js"></script>
+  <script src="js/vue.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 
   <title>Walter Silva - Developer.</title>
 </head>
@@ -22,28 +25,51 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">Walter Silva</a>
+ 
+      <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
+        <div id="options" class="mx-auto ">
+          <ul class="navbar-nav mr-auto ">
+            <li class="nav-item">
+              <a class="nav-link text-light hvr-ripple-in" href="#">About<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light hvr-ripple-in" href="#">portfolio</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link text-light hvr-ripple-in" target="_blank"
+                href="https://tiforadacaixa.blogspot.com">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light hvr-ripple-in" href="#">certifications</a>
+            </li>
 
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-          <li class="nav-item hvr-ripple-in">
-            <a class="nav-link text-light" href="#">About<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item hvr-ripple-in">
-            <a class="nav-link text-light" href="#">port folio</a>
-          </li>
-          <li class="nav-item hvr-ripple-in">
-            <a class="nav-link text-light" target="_blank" href="https://tiforadacaixa.blogspot.com">blog</a>
-          </li>
-          <li class="nav-item hvr-ripple-in">
-            <a class="nav-link text-light" href="#">certifications</a>
-          </li>
-        </ul>
+            <li class="nav-item">
+              <a class="nav-link text-light hvr-ripple-in" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-5"></div>
+        <div id="social" class="ml-5 mr-0">
+          <div class="my-2 my-lg-0 bg-danger pr-0 container" style="padding:0;">
+            <ul class="navbar-nav float-right">
+              <li class="nav-item col-4">
+                <a class="nav-link text-light pr-0" href="#"><img class="img-fluid" src="img/linkedin.png"
+                    alt="linkedin-icon"><span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item col-4">
+                <a class="nav-link text-light pr-0" href="#"><img class="img-fluid" src="img/github.png"
+                    alt="github-icon"><span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </nav>
   </div>
 
   <div id="app" class="col-12">
-    <div class="row">
+    <!-- about -->
+    <div class="row border border-light" id="about">
       <div class="col-md-4 d-block clearfix">
         <transition name="custom-classes-transition" enter-active-class="animate__animated animate__fadeInDown"
           leave-active-class="animate__animated animate__fadeOutUp">
@@ -52,16 +78,56 @@
       </div>
 
       <div class="col-md-8 d-flex align-items-center">
-        <div><h5 class="text-center hvr-float-shadow ">
-          <img src="img/waving-hand.png" class="col-1" />Hi, I’m
-          <a href="https://www.linkedin.com/in/walter-pereira-245067161/">Walter Silva</a><br />
-          I'm software developer with experience building websites and
-          applications, mostly in Python, and have some experience working with
-          JavaScript( including VueJS & Jquery ) and PHP(Codeigniter). Take a
-          look at my projects bellow.
-        </h5></div>
+        <div>
+          <h5 class="text-center hvr-float-shadow ">
+            <img src="img/waving-hand.png" class="col-1" />Hi, I’m
+            <a href="https://www.linkedin.com/in/walter-pereira-245067161/">Walter Silva</a><br />
+            I'm software developer with experience building websites and
+            applications, mostly in Python, and have some experience working with
+            JavaScript( including VueJS & Jquery ) and PHP(Codeigniter). Take a
+            look at my projects bellow.
+          </h5>
+        </div>
       </div>
     </div>
+    <!-- end about -->
+
+    <!-- portfolio -->
+    <div id="portfolio" style="margin-top:3%;">
+      <h6 class="text-center text-muted">-------------- <&#92;>SOME OF MY LATEST WORK<&#92;> --------------</h6>
+      <div>
+        <!-- project -->
+        <div class="col-md-4  col-12 float-left" id="project">
+          <div id="project-image">
+            <img class="img-fluid" src="img/project.jpg" alt="project-image">
+            <h6>PROJECT NAME</h6>
+          </div>
+        </div>
+        <!-- end project  -->
+        <!-- project -->
+        <div class="col-md-4  col-12 float-left" id="project">
+          <div id="project-image">
+            <img class="img-fluid" src="img/project.jpg" alt="project-image">
+            <h6>PROJECT NAME</h6>
+          </div>
+        </div>
+        <!-- end project  -->
+        <!-- project -->
+        <div class="col-md-4  col-12 float-left" id="project">
+          <div id="project-image">
+            <img class="img-fluid" src="img/project.jpg" alt="project-image">
+            <h6>PROJECT NAME</h6>
+          </div>
+        </div>
+        <!-- end project  -->
+      </div>
+    </div>
+    <!-- end portfolio -->
+    <!-- certifications -->
+
+    <!-- end certifications -->
+
+
 
     <script>
       setTimeout(() => {
@@ -74,9 +140,7 @@
         });
       }, 1000);
     </script>
-    <script src="js/jquery.js"></script>
-    <script src="js/vue.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
