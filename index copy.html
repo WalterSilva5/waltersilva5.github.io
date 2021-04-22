@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/hover-min.css">
+
+    <title>Walter Silva - Developer.</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-dark text-light" style="background-color: black;">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">Walter Silva</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item hvr-ripple-in">
+                        <a class="nav-link text-light" href="#">About<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item hvr-ripple-in">
+                        <a class="nav-link text-light" href="#">portifolio</a>
+                    </li>
+                    <li class="nav-item hvr-ripple-in">
+                        <a class="nav-link text-light" target="_blank"
+                            href="https://tiforadacaixa.blogspot.com">blog</a>
+                    </li>
+                    <li class="nav-item hvr-ripple-in">
+                        <a class="nav-link text-light" href="#">certifications</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <div id="app">
+        <div id="about" style="margin-top:50px; height:400px;" class="col-12 d-block border border-danger w-100 p-3">
+            <div class="col-md-4 d-blockclearfix">
+
+                <transition name="custom-classes-transition" enter-active-class="animate__animated animate__fadeInDown"
+                    leave-active-class="animate__animated animate__fadeOutUp">
+                    <img v-if="show" src="img/profile.png" class="img-fluid" alt="profile" v-cloak>
+                </transition>
+            </div>
+
+            <div class="col-md-8hvr-float-shadow">
+                <h5 class="text-center" style="margin-top:10%;"><img src="img/waving-hand.png" class="col-1">Hi, I’m <a
+                        href="https://www.linkedin.com/in/walter-pereira-245067161/">Walter Silva</a><br>
+                    I'm software developer with experience building websites and applications, mostly in Python, and
+                    have
+                    some experience working with JavaScript( including VueJS & Jquery ) and PHP(Codeigniter).
+                    Take a look at my projects bellow.
+                </h5>
+            </div>
+        </div> <br>
+        <div id="projects" class="bg-0" style="height:400px;">
+            <h3 class="text-center">SEE MY LAST WORKS</h3>
+        </div>
+    </div>
+    <script>
+        setTimeout(() => {
+            var index = new Vue({
+                el: "#app",
+                data: {
+                    show: true,
+                },
+                created() {},
+            })
+        }, 1000)
+    </script>
+    <script src="js/jquery.js"></script>
+    <script src="js/vue.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>

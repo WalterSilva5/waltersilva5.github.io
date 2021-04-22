@@ -7,8 +7,7 @@ body {
   display:none;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+// Usage as a mixin
+.element {
+  @include clearfix;
 }
