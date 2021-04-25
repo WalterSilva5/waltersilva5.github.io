@@ -11,7 +11,7 @@ for (x = 1; x <= 6; x++) {
   $("#certificates").append(`
     <div class="col-md-4" id="certificate">
     <div id="certificate-image">
-      <img class="img-fluid" src="img/certificados/${x}.png" alt="">
+      <img class="img-fluid" src="img/certificados/${x}.jpg" alt="">
     </div>
     <!--<h6 class="text-center">WINDOWS</h6>-->
   </div>
