@@ -1,136 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="img/icon.ico" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/animate.min.css" />
-  <link rel="stylesheet" href="css/hover-min.css" />
-  <link rel="stylesheet" href="css/slick.css">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walter Silva - Designer & Developer.</title>
+    <script type="module" crossorigin src="./assets/index.js"></script>
+    <link rel="modulepreload" src="./assets/vendor.js">
+    <link rel="stylesheet" href="./assets/index.css">
 
-  <title>Walter Silva - Developer.</title>
 </head>
 
 <body>
-  <!-- navbar -->
-  <div>
-    <nav class="navbar navbar-expand-lg navbar-dark text-light" style="background-color: black">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#about">Walter Silva</a>
-
-      <div class="collapse navbar-collapse " id="navbarTogglerDemo03">
-        <div id="options" class="mx-auto ">
-          <ul class="navbar-nav mr-auto ">
-            <li class="nav-item">
-              <a class="nav-link text-light hvr-ripple-in" href="#">About<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light hvr-ripple-in" href="#portfolio">portfolio</a>
-            </li>
-            <li class="nav-item ">
-              <a class="nav-link text-light hvr-ripple-in" target="_blank"
-                href="https://tiforadacaixa.blogspot.com">blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light hvr-ripple-in" href="#certificates">certificates</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link text-light hvr-ripple-in" href="#contact">contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-5"></div>
-        <div id="social" class="ml-5 mr-0">
-          <div class="my-2 my-lg-0 bg-danger pr-0 container" style="padding:0;">
-            <ul class="navbar-nav float-right">
-              <li class="nav-item col-4">
-                <a class="nav-link text-light pr-0" target="__blank"
-                  href="https://www.linkedin.com/in/walter-pereira-245067161/"><img class="img-fluid"
-                    src="img/icons/linkedin.png" alt="linkedin-icon"></a>
-              </li>
-              <li class="nav-item col-4">
-                <a class="nav-link text-light pr-0" target="__blank"
-                  href="https://github.com/WalterSilva5?tab=repositories"><img class="img-fluid"
-                    src="img/icons/github.png" alt="github-icon"></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
-  </div>
-  <!-- end navbar -->
-  <div id="index" class="col-12">
-    <!-- about -->
-    <div class="row border border-light" id="about">
-      <div class="col-md-4 d-block clearfix">
-        <transition name="custom-classes-transition" enter-active-class="animate__animated animate__fadeInDown"
-          leave-active-class="animate__animated animate__fadeOutUp">
-          <img v-if="show" src="img/profile.png" class="img-fluid" alt="profile" v-cloak />
-        </transition>
-      </div>
-
-      <div class="col-md-8 d-flex align-items-center">
-        <div>
-          <h5 class="text-center hvr-float-shadow ">
-            <img src="img/icons/waving-hand.png" class="col-1" />Hi, I’m
-            <a href="https://www.linkedin.com/in/walter-pereira-245067161/">Walter Silva</a><br />
-            I'm software developer with experience building websites and
-            applications, mostly in Python, and have some experience working with
-            JavaScript( including VueJS & Jquery ) and PHP(Codeigniter). Take a
-            look at my projects bellow.
-          </h5>
-        </div>
-      </div>
-    </div>
-    <!-- end about -->
-
-    <!-- portfolio -->
-    <div id="portfolio" class="col-12 container" style="margin-top:3%;">
-      <h6 class="text-center text-muted">-------------- <&#92;>SOME OF MY LATEST WORK<&#92;> --------------</h6>
-      <div id="projects" class="row">
-        <!-- project -->
-        
-      </div>
-    </div>
-    <!-- end portfolio -->
-    <!-- certificates -->
-    <div  class="col-12 container mt-5">
-      <h6 class="text-center text-muted">-------------- <&#92;>MY CERTIFICATES<&#92;> --------------</h6>
-      <div class="row" id="certificates">
-      </div>
-    </div>
-    <!-- end certificates -->
-    <!-- contact -->
-    <div id="contact" class=" row contaier col-12 mt-5 d-flex justify-content-center text-center pb-5">
-      <h1 class="h1 col-12">CONTACT</h1>
-      <div id="social-contact ">
-        <a target="__blank" href="https://www.linkedin.com/in/walter-pereira-245067161/"><img
-            class="img-fluid col-sm-1 bg-dark rounded" src="img/icons/linkedin.png" alt="linkedin"></a>
-        <a target="__blank" href="https://api.whatsapp.com/send?phone=5587996195736"><img
-            class="img-fluid col-sm-1 bg-dark rounded" src="img/icons/whatsapp.png" alt="whatsapp"></a>
-        <a target="__blank" href="mailto:waltersilva123454@gmail.com"><img class="img-fluid col-sm-1 bg-dark rounded"
-            src="img/icons/mail.png" alt=""></ a>
-      </div>
-
-    </div>
-    <!-- end contact -->
-
-
-
-    <script src="js/jquery.js"></script>
-    <script src="js/vue.js"></script>
-    <script src="js/slick.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/index.js"></script>
+    <div id="app"></div>
 
 </body>
 
