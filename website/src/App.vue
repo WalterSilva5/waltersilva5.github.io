@@ -5,7 +5,9 @@
 
 <script>
 import { defineComponent } from 'vue'
-import {$,jQuery} from 'jquery';
+import '../node_modules/jquery/dist/jquery.js';
+
+
 
 import "./assets/styles.scss";
 import "bootstrap/dist/css/bootstrap.css"

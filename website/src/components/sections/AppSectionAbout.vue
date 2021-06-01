@@ -2,11 +2,11 @@
   <div>
     <!-- about -->
     <div class="row about mt-3 px-md-4">
-      <div class="col-lg-4">
-        <img src="../../assets/profile.png" class="img-fluid rounded-circle wsi-shadow" alt="profile" />
+      <div class="col-lg-4 d-flex align-self-center">
+        <img src="../../assets/profile.png" class="img-fluid rounded-circle wsi-shadow-animated" alt="profile" />
       </div>
         <div class="col-lg-8 align-self-center">
-          <h5 class="about-text wsi-shadow">
+          <h5 class="about-text wsi-shadow-animated">
           <img
             src="../../assets/icons/waving-hand.png"
             class="hand-icon"
@@ -23,6 +23,7 @@
         </div>        
     </div>
     <!-- end about -->
+    <app-section-portfolio/>
   </div>
 </template>
 
