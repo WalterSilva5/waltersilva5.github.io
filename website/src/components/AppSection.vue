@@ -1,6 +1,6 @@
 <template>
   <div id="app-section">
-    <component class="comp" :is='componentActive'/>
+    <component class="comp" :is='sectionActive'/>
   </div>
 </template>
 
@@ -18,19 +18,18 @@ export default defineComponent({
       AppSectionProjects,
       AppSectionContacts
     },
-    data() {
-      return {
-        componentActive: "AppSectionAbout"
-      }
-    },
+      props:{
+        sectionActive: String
+    }
   })
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+h4{
+    margin: 0 !important;
+}
 #app-section{
   min-height: 600px;
-  background-color: red;
 }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
-  <app-header/>
-  <app-section/>
+  <app-header @changeSection="changeSection"/>
+  <app-section :sectionActive="sectionActive"/>
 </template>
 
 <script>
@@ -8,9 +8,8 @@ import { defineComponent } from 'vue'
 import {$,jQuery} from 'jquery';
 
 import "./assets/styles.scss";
-import '@materializecss/materialize/sass/materialize.scss'
-import 'w3-css/w3.css'
-
+import "bootstrap/dist/css/bootstrap.css"
+import "animate.css"
 
 import AppHeader from './components/AppHeader.vue'
 import AppSection from './components/AppSection.vue'
@@ -21,8 +20,19 @@ export default defineComponent({
     AppHeader,
     AppSection,
     AppFooter
-  }
+  },
+  data() {
+    return {
+      sectionActive: "AppSectionAbout"
+    }
+  },
+  methods: {
+    changeSection(section){
+      this.sectionActive = section;
+    }
+  },
 })
+//console.log(AppSection.methods.changeSection(AppSection))
 </script>
 
 <style>
