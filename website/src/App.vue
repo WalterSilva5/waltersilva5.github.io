@@ -1,6 +1,8 @@
 <template>
-  <app-header @changeSection="changeSection"/>
-  <app-section :sectionActive="sectionActive"/>
+  <div>
+    <app-header @changeSection="changeSection"/>
+    <app-section class="container-fluid" style="margin:0;" :sectionActive="sectionActive"/>
+  </div>
 </template>
 
 <script>

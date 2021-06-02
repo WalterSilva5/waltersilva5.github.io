@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h2 class="h2 title">SOME OF MY WORK</h2>
-    <div class="cards row container col-12 py-3 wsi-shadow">
+    <div class="my-5">
+      <h3 class="title">Alguns de meus projetos</h3>
+    <div class="cards row container-fluid col-12 py-3 wsi-shadow">
       <app-portfolio-card>
         <a href="https://waltersilva5.github.io/wsi-youtube-downloader-demo/" target="__blank">
           <img
@@ -44,6 +45,7 @@
       </app-portfolio-card></a>
 
     </div>
+    </div>
   </div>
 </template>
 
@@ -61,6 +63,14 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+  &.hover{
+    color:blue;
+    text-decoration:none;
+  }
+}
 .cards{
   display: block;
   overflow-x: auto;
