@@ -31,8 +31,8 @@
           </h5>
         </div>
 
-        <div class="row container-fluid col-12 d-flex justify-content-center">
-          <div class="row col-8 wsi-shadow-animated m-4 text-left">
+        <div class="row container-md container-fluid col-12 d-flex justify-content-center">
+          <div class="row col-md-8 wsi-shadow-animated mx-md-4 my-4 text-left">
             <div>
               <h5>
                 <b>Tenho experiencia com desenvolvimento web backend com:</b>
@@ -47,7 +47,7 @@
               <span>Bancos de dados: Oracle, PostgreSQL e MySQL</span>
             </div>
           </div>
-          <div class="row col-8 wsi-shadow-animated m-4 text-left">
+          <div class="row col-md-8 wsi-shadow-animated mx-md-4 my-4  text-left">
             <h5><b>Possuo experiência frontend com as ferramentas:</b></h5>
             <div>
               <span class="my-2">VueJS</span>
@@ -60,7 +60,7 @@
             </div>
           </div>
 
-          <div class="row col-8 wsi-shadow-animated m-4 text-left">
+          <div class="row col-md-8 wsi-shadow-animated mx-md-4 my-4 text-left">
             <div>
               <h5 style="height: 100%">
                 <b>Tenho tambem os conhecimentos:</b>

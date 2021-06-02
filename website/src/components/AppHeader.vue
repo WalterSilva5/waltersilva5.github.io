@@ -5,7 +5,7 @@
         Walter Silva
       </h4>
       <button
-        class="navbar-toggler bg-secondary text-light"
+        class="navbar-toggler bg-secondary text-light ml-auto"
         type="button"
         @click="toggle_menu()"
       >
@@ -56,12 +56,12 @@
               >Blog</a
             >
           </li>
+          
         </ul>
-        <div id="social" class="ml-auto mr-4 float-right">
-          <ul class="navbar-nav justify-content-end float-right">
-            <li class="col-sm-4 mx-2 float-left">
+        <div class="ml-auto float-right navbar-nav">
+            <li class="col-sm-4  float-right">
               <a
-                class="nav-link text-light pr-0"
+                class="nav-link text-light"
                 target="_blank"
                 href="https://www.linkedin.com/in/walter-pereira-245067161/"
                 ><img
@@ -70,9 +70,9 @@
                   alt="linkedin-icon"
               /></a>
             </li>
-            <li class="col-sm-4 float-left">
+            <li class="col-sm-4 float-right">
               <a
-                class="nav-link text-light pr-0"
+                class="nav-link text-light"
                 target="_blank"
                 href="https://github.com/WalterSilva5?tab=repositories"
                 ><img
@@ -81,8 +81,7 @@
                   alt="github-icon"
               /></a>
             </li>
-          </ul>
-        </div>
+          </div>
       </div>
     </nav>
   </div>
