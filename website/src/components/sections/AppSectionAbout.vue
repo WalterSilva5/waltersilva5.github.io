@@ -16,8 +16,7 @@
           justify-content-center
           wsi-shadow-animated
         "
-
-        style="max-height: 450px; overflow:auto;"
+        style="max-height: 450px; overflow: auto"
       >
         <div class="container-fluid">
           <h5 class="about-text text-center align-self-center">
@@ -40,7 +39,7 @@
               </h5>
             </div>
             <br />
-            <div >
+            <div>
               <span class="my-2">Python3 + Django</span>
               <br />
               <span>PHP + Codeigniter3</span>
@@ -50,7 +49,7 @@
           </div>
           <div class="row col-8 wsi-shadow-animated m-4 text-left">
             <h5><b>Possuo experiência frontend com as ferramentas:</b></h5>
-            <div >
+            <div>
               <span class="my-2">VueJS</span>
               <br />
               <span>Bootstrap, W3CSS, MateralizeCSS</span>
@@ -62,16 +61,21 @@
           </div>
 
           <div class="row col-8 wsi-shadow-animated m-4 text-left">
-            <div><h5  style="height: 100%;"><b>Tenho tambem os conhecimentos:</b></h5></div>
-           <div class="col-12 p-0 m-0 float-left container-flex"> 
-             <div>
-              <span>Programação seguindo os principios SOLID</span>
-              <br />
-              <span>Clean Code e Design Patterns</span>
-              <br />
-              <span>Prototipagem de componentes</span>
-              <br />
-              <span>Conhecimentos em qualidade de design</span></div>
+            <div>
+              <h5 style="height: 100%">
+                <b>Tenho tambem os conhecimentos:</b>
+              </h5>
+            </div>
+            <div class="col-12 p-0 m-0 float-left container-flex">
+              <div>
+                <span>Programação seguindo os principios SOLID</span>
+                <br />
+                <span>Clean Code e Design Patterns</span>
+                <br />
+                <span>Prototipagem de componentes</span>
+                <br />
+                <span>Conhecimentos em qualidade de design</span>
+              </div>
             </div>
           </div>
         </div>

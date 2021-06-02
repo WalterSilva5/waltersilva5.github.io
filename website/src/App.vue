@@ -9,12 +9,11 @@
 import { defineComponent } from 'vue'
 import '../node_modules/jquery/dist/jquery.js';
 
-
+import JQuery from 'jquery'
 
 import "./assets/styles.scss";
 import "bootstrap/dist/css/bootstrap.css"
 import "animate.css"
-
 import AppHeader from './components/AppHeader.vue'
 import AppSection from './components/AppSection.vue'
 import AppFooter from './components/AppFooter.vue'

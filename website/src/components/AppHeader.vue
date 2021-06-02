@@ -11,9 +11,10 @@
       >
         <span class="text-light"><b>MENU</b></span>
       </button>
+      <br>
       <div class="navbar-collapse" id="navbarNav" style="display: none">
         <ul class="navbar-nav">
-          <li class="nav-item">
+          <li>
             <a
               class="nav-item nav-link"
               type="button"
@@ -89,10 +90,6 @@
 
 <script>
 import { ref, defineComponent } from "vue";
-
-$(".nav-item").on("click", function () {
-  this.toggle_menu();
-});
 
 export default defineComponent({
   props: {},
