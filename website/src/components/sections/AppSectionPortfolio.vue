@@ -2,9 +2,9 @@
   <div>
     <div class="my-5">
       <h3 class="title">Alguns de meus projetos</h3>
-    <div class="cards row container-fluid col-12 py-3 wsi-shadow">
+    <div class="cards row container-fluid col-12 py-3 wsi-shadow" id="cards">
       <app-portfolio-card>
-        <a href="https://waltersilva5.github.io/wsi-youtube-downloader-demo/" target="__blank">
+        <a href="https://waltersilva5.github.io/wsi-youtube-downloader-demo/" target="_blank">
           <img
           src="../../assets/projects/project-0.png"
           class="img-fluid"
@@ -12,7 +12,7 @@
         </a>
       </app-portfolio-card>
 
-      <a href="https://carvalhosfit.herokuapp.com/home/" target="__blank">
+      <a href="https://carvalhosfit.herokuapp.com/home/" target="_blank">
       <app-portfolio-card>
         <img
           src="../../assets/projects/project-1.png"
@@ -20,7 +20,7 @@
         />
       </app-portfolio-card></a>
 
-      <a href="https://frinex.com.br" target="__blank">
+      <a href="https://frinex.com.br" target="_blank">
       <app-portfolio-card>
         <img
           src="../../assets/projects/project-2.png"
@@ -28,7 +28,7 @@
         />
       </app-portfolio-card></a>
 
-      <a href="https://github.com/WalterSilva5/gestao-de-lan-house" target="__blank">
+      <a href="https://github.com/WalterSilva5/gestao-de-lan-house" target="_blank">
       <app-portfolio-card>
         <img
           src="../../assets/projects/project-3.png"
@@ -36,7 +36,7 @@
         />
       </app-portfolio-card></a>
 
-      <a href="https://github.com/WalterSilva5/teste-esoft" target="__blank">
+      <a href="https://github.com/WalterSilva5/teste-esoft" target="_blank">
       <app-portfolio-card>
         <img
           src="../../assets/projects/project-4.png"
@@ -58,7 +58,12 @@ export default defineComponent({
   name: "AppSectionPortfolio",
   components:{
     AppPortfolioCard
-  }
+  },
+  created() {
+    setInterval(()=>{
+      document.getElementById("cards").scrollLeft += 1;
+    }, 300)
+  },
 });
 </script>
 

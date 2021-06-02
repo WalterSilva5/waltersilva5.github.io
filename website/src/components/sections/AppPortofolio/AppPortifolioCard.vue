@@ -14,9 +14,9 @@ export default {};
 .card {
   display: inline-block;
   margin-left: 20px;
-  height: 300px;
+  height: 250px;
   img{
-      height: 300px;
+      height: 250px;
   }
 }
 </style>

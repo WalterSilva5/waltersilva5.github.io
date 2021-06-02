@@ -10,7 +10,7 @@
           <div class="col-sm-2 align-self-center">
             <img
               src="../../assets/icons/linkedin.png"
-              class="rounded-circle col-md-8"
+              class="rounded-circle col-lg-8"
               style="filter: invert(1)"
             />
           </div>
@@ -25,7 +25,7 @@
           <div class="col-sm-2 align-self-center">
             <img
               src="../../assets/icons/github.png"
-              class="rounded-circle col-md-8"
+              class="rounded-circle col-lg-8"
               style="filter: invert(1)"
             />
           </div>
@@ -39,7 +39,7 @@
             <div class="col-sm-2 align-self-center">
               <img
                 src="../../assets/icons/mail.png"
-                class="rounded-circle col-md-8"
+                class="rounded-circle col-lg-8"
                 style="filter: invert(1)"
               />
             </div>
@@ -53,7 +53,7 @@
             <div class="col-sm-2 align-self-center">
               <img
                 src="../../assets/icons/whatsapp.png"
-                class="rounded-circle col-md-8"
+                class="rounded-circle col-lg-8"
                 style=" filter: saturate(1); filter: grayscale(.8);"
               />
             </div>
@@ -77,13 +77,21 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+div{
+  overflow: auto;
+}
 h3 {
-  font-size: 40px;
+  display: inline-block;
+  font-size: 1.5em;
   font-weight: bold;
   &.hover{
     color:blue;
     text-decoration:none;
   }
+}
+
+img{
+  width: 100px;
 }
 
 a{

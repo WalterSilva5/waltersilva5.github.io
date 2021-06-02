@@ -82,17 +82,21 @@
       </div>
     </div>
     <!-- end about -->
-    <app-section-portfolio />
+    <app-section-portfolio/>
+
+    <app-section-contacts/>
   </div>
 </template>
 
 <script>
 import { defineComponent } from "@vue/runtime-core";
+import AppSectionContacts from "./AppSectionContacts.vue";
 import AppSectionPortfolio from "./AppSectionPortfolio.vue";
 export default defineComponent({
   name: "AppSectionAbout",
   components: {
     AppSectionPortfolio,
+    AppSectionContacts,
   },
 });
 </script>
