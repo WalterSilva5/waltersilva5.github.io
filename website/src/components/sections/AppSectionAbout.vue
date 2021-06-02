@@ -35,7 +35,7 @@
           <div class="row col-md-8 wsi-shadow-animated mx-md-4 my-4 text-left">
             <div>
               <h5>
-                <b>Tenho experiencia com desenvolvimento web backend com:</b>
+                <b>Tenho experiencia com desenvolvimento web backend utilizando:</b>
               </h5>
             </div>
             <br />
