@@ -1,0 +1,13 @@
+@mixin IconImage {
+  filter: invert(1);
+  width: 40px;
+  margin: 20px;
+}
+
+.IconImage{
+  @include IconImage;
+}
+.IconImageWhats{
+  @include IconImage;
+  filter: grayscale(1)
+}
