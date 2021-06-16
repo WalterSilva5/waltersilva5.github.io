@@ -12,6 +12,7 @@ import image3 from '../../Assets/projects/project-2.png';
 import image4 from '../../Assets/projects/project-3.png';
 import image5 from '../../Assets/projects/project-4.png';
 import image6 from '../../Assets/projects/project-5.png';
+import image7 from '../../Assets/projects/project-6.png';
 
 export default class PortfolioSlider extends React.Component {
   constructor(props) {
@@ -81,12 +82,11 @@ export default class PortfolioSlider extends React.Component {
           {...settings}
           className={` col-12 container-fluid${classes.PortfolioSlider}`}
         >
-          <a target="_blank" href="https://waltersilva5.github.io/wsi-youtube-downloader-demo/" rel="noreferrer">
+          <a target="_blank" href="https://waltersilva5.github.io/wsi_controle_financeiro/dist/" rel="noreferrer">
             <PortfolioSliderItem>
               <img className="img-fluid d-flex align-middle" src={image1} />
             </PortfolioSliderItem>
           </a>
-
           <a target="_blank" href="https://carvalhosfit.herokuapp.com/" rel="noreferrer">
             <PortfolioSliderItem>
               <img className="img-fluid d-flex align-middle" src={image2} />
@@ -110,6 +110,11 @@ export default class PortfolioSlider extends React.Component {
           <a target="_blank" href="https://waltersilva5.github.io/wsi-landing-page-green/dist/" rel="noreferrer">
             <PortfolioSliderItem>
               <img className="img-fluid d-flex align-middle" src={image6} />
+            </PortfolioSliderItem>
+          </a>
+          <a target="_blank" href="https://waltersilva5.github.io/wsi-youtube-downloader-demo/" rel="noreferrer">
+            <PortfolioSliderItem>
+              <img className="img-fluid d-flex align-middle" src={image7} />
             </PortfolioSliderItem>
           </a>
 

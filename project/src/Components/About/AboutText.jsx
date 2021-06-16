@@ -51,7 +51,7 @@ const AboutText = () => (
       <div className="row  WsiShadow my-4  text-left">
         <h5><b>Possuo experiência frontend com as ferramentas:</b></h5>
         <div>
-          <span className="my-2">VueJS</span>
+          <span className="my-2">ReactJS, VueJS</span>
           <br />
           <span>Bootstrap, W3CSS, MateralizeCSS</span>
           <br />
