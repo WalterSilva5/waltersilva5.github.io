@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-primary text-white antialiased;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-6;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 px-6 py-3 bg-white text-primary font-medium
+           transition-colors hover:bg-neutral-200;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 px-6 py-3 border border-neutral-700
+           text-white font-medium transition-colors hover:bg-neutral-800;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold mb-8;
+  }
+
+  .skill-tag {
+    @apply px-3 py-1 bg-secondary text-sm text-neutral-300 border border-neutral-800;
+  }
+
+  .project-card {
+    @apply bg-secondary border border-neutral-800 overflow-hidden
+           transition-all hover:border-neutral-600;
+  }
+}

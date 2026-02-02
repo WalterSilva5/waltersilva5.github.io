@@ -1,13 +1,7 @@
-/* eslint-disable import/no-extraneous-dependencies */
-import { defineConfig } from 'vite';
-import reactRefresh from '@vitejs/plugin-react-refresh';
-import react from 'vite-preset-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  plugins: [
-    react({
-      removeDevtoolsInProd: true,
-      injectReact: true,
-    }),
-  ],
-});
+  plugins: [react()],
+  base: '/',
+})
