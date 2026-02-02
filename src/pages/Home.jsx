@@ -1,8 +1,15 @@
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { projects } from '../data/projects'
 
 function Home() {
-  const featuredProjects = projects.slice(0, 3)
+  const [projects, setProjects] = useState([])
+
+  useEffect(() => {
+    fetch('/data/projects.json')
+      .then((res) => res.json())
+      .then((data) => setProjects(data.projects.slice(0, 3)))
+      .catch((err) => console.error('Erro ao carregar projetos:', err))
+  }, [])
 
   return (
     <div>
@@ -47,7 +54,7 @@ function Home() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {featuredProjects.map((project) => (
+            {projects.map((project) => (
               <article key={project.id} className="project-card">
                 <div className="aspect-video bg-secondary">
                   <img

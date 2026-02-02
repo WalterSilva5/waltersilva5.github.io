@@ -1,8 +1,22 @@
-import { useState } from 'react'
-import { projects } from '../data/projects'
+import { useState, useEffect } from 'react'
 
 function Projects() {
+  const [projects, setProjects] = useState([])
   const [filter, setFilter] = useState('all')
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    fetch('/data/projects.json')
+      .then((res) => res.json())
+      .then((data) => {
+        setProjects(data.projects)
+        setLoading(false)
+      })
+      .catch((err) => {
+        console.error('Erro ao carregar projetos:', err)
+        setLoading(false)
+      })
+  }, [])
 
   const allTags = [...new Set(projects.flatMap((p) => p.tags))]
 
@@ -10,6 +24,18 @@ function Projects() {
     filter === 'all'
       ? projects
       : projects.filter((p) => p.tags.includes(filter))
+
+  if (loading) {
+    return (
+      <div className="py-20">
+        <div className="container-custom">
+          <div className="text-center py-12">
+            <p className="text-muted">Carregando projetos...</p>
+          </div>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="py-20">
